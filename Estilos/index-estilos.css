@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #064d75;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  background-color: #064d75;
+  display: block;
+  color: #fff;
+  padding: 1em;
+  cursor: pointer;
+  width: 100%;
+  padding: 1em;
+}
+
+
+.menu, .submenu{
+    list-style: none;
+}
+
+.menu{
+    background-color: #063d5e;
+    width: 100%;
+    margin-left: -100%;
+    transition: all ease 0.3s;
+}
+
+.menu .menu__item:hover{
+    background-color: #064d75;
+}
+
+.menu__link{
+    display: block;
+    padding:1em;
+    color: #fff;
+}
+
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+.submenu .menu__link{
+    background-color: #04334e;
+    padding-left: 2em;
+}
+
+.submenu .menu__link:hover{
+    background-color: #064d75;
+}
+
+.mostrar{
+    margin-left: 0;
+}
+
+@media (min-width:1024px){
+.nav-bar{
+    display: none;
+}
+
+.menu{
+    margin-left: 0;
+    display: flex;
+}
+.container-submenu{
+    position: relative;
+}
+.submenu{
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu .menu__item{
+    padding-left: 0;
+}
+
+.container-submenu:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu .menu__item:hover{
+    background-color: #063d5e;
+}
+
+}
