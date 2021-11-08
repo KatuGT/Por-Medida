@@ -15,6 +15,13 @@ a {
   text-decoration: none;
 }
 
+/* INICIO HEADER / MENU */
+
+header{
+    display: block;
+    width: 100vw;
+}
+
 .nav-bar {
   background-color: #064d75;
   display: block;
@@ -23,6 +30,7 @@ a {
   cursor: pointer;
   width: 100%;
   padding: 1em;
+  position: relative;
 }
 
 
@@ -35,6 +43,7 @@ a {
     width: 100%;
     margin-left: -100%;
     transition: all ease 0.3s;
+    position: absolute;
 }
 
 .menu .menu__item:hover{
@@ -66,7 +75,67 @@ a {
     margin-left: 0;
 }
 
+/* INICIO MAIN */
+/* titulo */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titulo{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    margin-top: 3em;
+}
+
+.titulo .linea{
+    height: 0.1em;
+    width: 8em;
+    background-color: #fff;
+    margin: 0.5em 0;
+}
+
+.triangulos{
+    margin: 0.5em 0;
+}
+
+.st0, .st1, .st2{
+    fill: #fff;
+}
+
+.st1, .st2{
+    opacity: 0.50;
+}
+
+/* repuestos */
+.repuestos{
+    text-align: center;    
+    font-size: 2em;
+    font-weight: 900;
+    color: #064d75;    
+}
+
+.repuesto{
+    border-radius: 0.3em;
+    margin: 0.4em;
+    background-color: #fff;
+    padding: 1em;    
+    cursor: pointer;
+}
+
 @media (min-width:1024px){
+header{
+    position: relative;
+}
+
 .nav-bar{
     display: none;
 }
