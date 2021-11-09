@@ -9,7 +9,7 @@
 :root{
     --azul-oscuro: #04334e;
     --azul-estandar: #064d75;
-    --azul-claro: #063d5e;
+    --azul-claro: #26B0FF;
 }
 
 
@@ -26,7 +26,7 @@ a {
 
 header{
     display: block;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
 }
 
