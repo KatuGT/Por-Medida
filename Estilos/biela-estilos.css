@@ -2,7 +2,85 @@
     padding: 1em;
 }
 
+/* BIELA */
+/* biela frente */
+.biela-frente .grupoA{    
+    fill:yellow ;
+}
 
+.biela-frente .grupoB{
+    fill:tomato;
+}
+
+.biela-frente .grupoC{
+    fill: violet;
+}
+
+.biela-frente .cuerpo-biela{
+    fill: #fff;
+}
+
+/* biela lado */
+.biela-lado .cuerpo-biela{
+    fill: #fff;
+}
+
+.biela-lado .grupoD{
+    fill: teal;
+}
+
+.biela-lado .grupoE{
+    fill:wheat;
+}
+
+.biela-lado .grupoF{
+    fill:skyblue;
+}
+
+.biela-lado .grupoG{
+    fill: rosybrown;
+}
+
+/* muñon */
+.biela-muñon .muñon-cuerpo{
+ fill: #fff;
+}
+
+.biela-muñon .grupoH{
+    fill: salmon;
+}
+
+.biela-muñon .grupoI{
+    fill: slategray;
+}
+
+/* posicion biela*/
+
+.imagen-biela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.biela-frente{
+    width: 30em;
+}
+
+.biela-lado{
+    width: 32.5em;
+    position: relative;
+    left: -0.5em;
+}
+
+.biela-muñon{
+    width: 15em;
+}
+
+
+
+
+/* TABLA */
 .table{
     width: 100%;
     border-collapse: collapse;
@@ -24,7 +102,15 @@
     background-color: #f3f3f3;
 }
 
+
+
+
 @media (max-width: 650px){
+    /* BIELA */
+    
+
+
+    /* TABLA */
     .table thead{
         display: none;
     }
