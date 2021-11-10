@@ -1,34 +1,54 @@
 .main-producto{
-    padding: 1em;
+    padding: 1em;    
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* BIELA */
+.imagen-producto{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
 /* biela frente */
+
+
 .biela-frente{
     position: relative;
 }
 
-
 .biela-frente .ingresoA{
     position: absolute;
-    left: 12%;
-    top: 0;
+    left: 10%;
+    top: -9%;
 }
 
 .biela-frente .ingresoB{
     position: absolute;
     left: 70%;
-    top: 0;
+    top: -9%;
 }
 
 .biela-frente .ingresoC{
     position: absolute;
     left: 42%;
-    top: 90%;
+    top: 98%;
 }
 
 .biela-frente label{
-    background-color: tomato;
+    background-color: #fff;
+    color:var(--azul-estandar);
+    display: inline-flex;
+    height: 1.5em;
+    width: 1.5em;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50% 0 0 50%;
+    font-weight: bold;
 }
 
 .biela-frente input{
@@ -36,26 +56,27 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #fff;
+    outline: 0;
+    color: #fff;
 } 
 
 
-.biela-frente .grupoA{    
-    fill:yellow ;
+.biela-frente .grupo{
+ fill: #fff;    
 }
 
-.biela-frente .grupoB{
-    fill:tomato;
-}
-
-.biela-frente .grupoC{
-    fill: violet;
-}
 
 .biela-frente .cuerpo-biela{
     fill: #fff;
 }
 
+
+
 /* biela lado */
+.biela-lado{
+    margin: 5em 0;
+}
+
 .biela-lado .cuerpo-biela{
     fill: #fff;
 }
@@ -105,7 +126,6 @@
 .biela-lado{
     width: 32.5em;
     position: relative;
-    left: -0.5em;
 }
 
 .biela-muñon{
