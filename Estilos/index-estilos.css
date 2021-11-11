@@ -10,6 +10,17 @@
     --azul-oscuro: #04334e;
     --azul-estandar: #064d75;
     --azul-claro: #063d5e;
+    --medida-A: #FF0000;
+    --medida-B: #ff8700;
+    --medida-C: #ffd300;
+    --medida-D: #deff0a;
+    --medida-E: #a1ff0a;
+    --medida-F: #0AFF99;
+    --medida-G: #0AEFFF;
+    --medida-H: #147DF5;
+    --medida-I: #753bf2;
+    --medida-J: #f841a6;
+    --medida-K: #ff0aeb;
 }
 
 
@@ -26,7 +37,7 @@ a {
 
 header{
     display: block;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
 }
 

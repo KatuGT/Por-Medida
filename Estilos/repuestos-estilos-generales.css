@@ -1,0 +1,71 @@
+.main-producto{
+    padding: 1em;    
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.imagen-producto{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
+.biela-frente input,
+.biela-lado input,
+.biela-muñon input{
+    width: 3.5em;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: #fff;
+} 
+
+#inputA{
+    border-bottom: 1px solid var(--medida-A);
+}
+
+#inputB{
+    border-bottom: 1px solid var(--medida-B);
+}
+
+#inputC{
+    border-bottom: 1px solid var(--medida-C);
+}
+
+#inputD{
+    border-bottom: 1px solid var(--medida-D);
+}
+
+#inputE{
+    border-bottom: 1px solid var(--medida-E);
+}
+
+#inputF{
+    border-bottom: 1px solid var(--medida-F);
+}
+
+#inputG{
+    border-bottom: 1px solid var(--medida-G);
+}
+
+#inputH{
+    border-bottom: 1px solid var(--medida-H);
+}
+
+#inputI{
+    border-bottom: 1px solid var(--medida-I);
+}
+
+#inputJ{
+    border-bottom: 1px solid var(--medida-J);
+}
+
+#inputK{
+    border-bottom: 1px solid var(--medida-K);
+}

@@ -1,19 +1,7 @@
-.main-producto{
-    padding: 1em;    
-}
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-{
-  -webkit-appearance: none;
-  margin: 0;
-}
 
 /* BIELA */
-.imagen-producto{
-    margin-top: 5em;
-    margin-bottom: 5em;
-}
+
 
 .biela-frente,
 .biela-lado,
@@ -34,17 +22,6 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 
-.biela-frente input,
-.biela-lado input,
-.biela-muñon input{
-    width: 3.5em;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: 0;
-    color: #fff;
-} 
-
 .biela-frente label,
 .biela-lado label,
 .biela-muñon label{
@@ -57,6 +34,7 @@ input[type=number]::-webkit-outer-spin-button
     align-items: center; 
     border-radius: 50% 0 0 50%;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* biela frente */
@@ -84,7 +62,17 @@ input[type=number]::-webkit-outer-spin-button
     fill: #fff;
 }
 
+.biela-frente .grupoA{
+    fill: var(--medida-A);
+}
 
+.biela-frente .grupoB{
+    fill: var(--medida-B);
+}
+
+.biela-frente .grupoC{
+    fill: var(--medida-C);
+}
 
 /* biela lado */
 .biela-lado{
@@ -113,6 +101,22 @@ input[type=number]::-webkit-outer-spin-button
 .biela-lado .ingresoG{
     left: 46%;
     top: 90%;
+}
+
+.biela-lado .grupoD{
+    fill: var(--medida-D);
+}
+
+.biela-lado .grupoE{
+    fill: var(--medida-E);
+}
+
+.biela-lado .grupoF{
+    fill: var(--medida-F);
+}
+
+.biela-lado .grupoG{
+    fill: var(--medida-G);
 }
 
 /* muñon */
