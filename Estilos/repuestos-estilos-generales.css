@@ -27,45 +27,45 @@ input[type=number]::-webkit-outer-spin-button
 } 
 
 #inputA{
-    border-bottom: 1px solid var(--medida-A);
+    border-bottom: 1px solid var(--medida-A2);
 }
 
 #inputB{
-    border-bottom: 1px solid var(--medida-B);
+    border-bottom: 1px solid var(--medida-B2);
 }
 
 #inputC{
-    border-bottom: 1px solid var(--medida-C);
+    border-bottom: 1px solid var(--medida-C2);
 }
 
 #inputD{
-    border-bottom: 1px solid var(--medida-D);
+    border-bottom: 1px solid var(--medida-D2);
 }
 
 #inputE{
-    border-bottom: 1px solid var(--medida-E);
+    border-bottom: 1px solid var(--medida-E2);
 }
 
 #inputF{
-    border-bottom: 1px solid var(--medida-F);
+    border-bottom: 1px solid var(--medida-F2);
 }
 
 #inputG{
-    border-bottom: 1px solid var(--medida-G);
+    border-bottom: 1px solid var(--medida-G2);
 }
 
 #inputH{
-    border-bottom: 1px solid var(--medida-H);
+    border-bottom: 1px solid var(--medida-H2);
 }
 
 #inputI{
-    border-bottom: 1px solid var(--medida-I);
+    border-bottom: 1px solid var(--medida-I2);
 }
 
 #inputJ{
-    border-bottom: 1px solid var(--medida-J);
+    border-bottom: 1px solid var(--medida-J2);
 }
 
 #inputK{
-    border-bottom: 1px solid var(--medida-K);
+    border-bottom: 1px solid var(--medida-K2);
 }
