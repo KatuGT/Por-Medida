@@ -22,26 +22,12 @@
 }
 
 
-.biela-frente label,
-.biela-lado label,
-.biela-muñon label{
-    background-color: #fff;
-    color:var(--azul-estandar);
-    display: inline-flex;
-    height: 1.5em;
-    width: 1.5em;
-    justify-content: center;
-    align-items: center; 
-    border-radius: 50% 0 0 50%;
-    font-weight: bold;
-    cursor: pointer;
-}
+
 
 /* biela frente */
 
 .biela-frente{
     position: relative;
-    min-width: 80%;
 }
 
 .biela-frente .ingresoA{
@@ -64,29 +50,21 @@
 }
 
 .biela-frente .grupoA{
-    fill: var(--medida-A2);
+    fill: var(--medida-A);
 }
 
 .biela-frente .grupoB{
-    fill: var(--medida-B2);
+    fill: var(--medida-B);
 }
 
 .biela-frente .grupoC{
-    fill: var(--medida-C2);
+    fill: var(--medida-C);
 }
 
 /* biela lado */
 .biela-lado{
-    min-width: 80%;
-    position: relative;
-    left: -3em;
+    margin: 5em 0;
 }
-
-#D{
-    position: relative;
-}
-
-
 
 .biela-lado .cuerpo-biela{
     fill: #fff;
@@ -94,45 +72,41 @@
 
 .biela-lado .ingresoD{
     top: -15%;
-    left: 43.5%;
+    left: 42.5%;
 }
 
 .biela-lado .ingresoE{
     top: 45%;
-    left: -12%;
+    left:-13%;
 }
 
 .biela-lado .ingresoF{
     top: 45%;
-    right: -12%
+   left: 100%;
 }
 
 .biela-lado .ingresoG{
-    left: 43.5%;
+    left: 46%;
     top: 90%;
 }
 
 .biela-lado .grupoD{
-    fill: var(--medida-D2);
+    fill: var(--medida-D);
 }
 
 .biela-lado .grupoE{
-    fill: var(--medida-E2);
+    fill: var(--medida-E);
 }
 
 .biela-lado .grupoF{
-    fill: var(--medida-F2);
+    fill: var(--medida-F);
 }
 
 .biela-lado .grupoG{
-    fill: var(--medida-G2);
+    fill: var(--medida-G);
 }
 
 /* muñon */
-.biela-muñon{
-    width: 15em;
-}
-
 .biela-muñon svg{
     transform: rotate(0.5turn);
 }
@@ -147,74 +121,28 @@
 }
 
 .biela-muñon .ingresoI{
-    fill: var(--medida-);
     top: 100%;
     right: 2%;
 }
 
-.biela-muñon .grupoH{
-    fill: var(--medida-H2);
-}
-
-.biela-muñon .grupoI{
-    fill: var(--medida-I2);
-}
-
-
 /* posicion biela*/
 
 .imagen-biela{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    'biela-frente biela-lado'
-     'biela-muñon biela-muñon';
-     place-items: center;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .biela-frente{
-    grid-area:'biela-frente';
+    width: 30em;
 }
 
 .biela-lado{
-    grid-area: 'biela-lado';
+    width: 32.5em;
+    position: relative;
 }
 
 .biela-muñon{
-    grid-area: 'biela-muñon';
-    grid-column:1/3 ;
-}
-
-
-@media  (max-width: 980px) {
-    .imagen-biela{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        'biela-frente biela-frente'
-        'biela-lado biela-lado'
-         'biela-muñon biela-muñon';
-         place-items: center;
-    }
-.biela-frente{
-    min-width: 30em;
-    grid-column:1/3
-}
-
-.biela-lado{
-    min-width: 32.5em;
-    grid-column:1/3;
-    margin: 5em 0;
-    left: -0.5%;
-}
-
-}
-
-@media (max-width: 690px) {
-    .biela-frente{
-        min-width: 70%;
-    }
-
-    .biela-lado{
-        min-width: 75%;
-    }
+    width: 15em;
 }
