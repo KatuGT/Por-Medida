@@ -46,50 +46,50 @@ input[type=number]::-webkit-outer-spin-button
 } 
 
 #inputA{
-    border-bottom: 1px solid var(--medida-A2);
+    border-bottom: 1px solid var(--clr-medida-A2);
 }
 
 #inputB{
-    border-bottom: 1px solid var(--medida-B2);
+    border-bottom: 1px solid var(--clr-medida-B2);
 }
 
 #inputC{
-    border-bottom: 1px solid var(--medida-C2);
+    border-bottom: 1px solid var(--clr-medida-C2);
 }
 
 #inputD{
-    border-bottom: 1px solid var(--medida-D2);
+    border-bottom: 1px solid var(--clr-medida-D2);
 }
 
 #inputE{
-    border-bottom: 1px solid var(--medida-E2);
+    border-bottom: 1px solid var(--clr-medida-E2);
 }
 
 #inputF{
-    border-bottom: 1px solid var(--medida-F2);
+    border-bottom: 1px solid var(--clr-medida-F2);
 }
 
 #inputG{
-    border-bottom: 1px solid var(--medida-G2);
+    border-bottom: 1px solid var(--clr-medida-G2);
 }
 
 #inputH{
-    border-bottom: 1px solid var(--medida-H2);
+    border-bottom: 1px solid var(--clr-medida-H2);
 }
 
 #inputI{
-    border-bottom: 1px solid var(--medida-I2);
+    border-bottom: 1px solid var(--clr-medida-I2);
 }
 
 #inputJ{
-    border-bottom: 1px solid var(--medida-J2);
+    border-bottom: 1px solid var(--clr-medida-J2);
 }
 
 #inputK{
-    border-bottom: 1px solid var(--medida-K2);
+    border-bottom: 1px solid var(--clr-medida-K2);
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     .ingreso{ 
         border-radius: 100vh;
     }

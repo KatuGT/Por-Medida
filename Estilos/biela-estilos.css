@@ -50,15 +50,15 @@
 }
 
 .biela-frente .grupoA{
-    fill: var(--medida-A);
+    fill: var(--clr-medida-A2);
 }
 
 .biela-frente .grupoB{
-    fill: var(--medida-B);
+    fill: var(--clr-medida-B2);
 }
 
 .biela-frente .grupoC{
-    fill: var(--medida-C);
+    fill: var(--clr-medida-C2);
 }
 
 /* biela lado */
@@ -91,19 +91,19 @@
 }
 
 .biela-lado .grupoD{
-    fill: var(--medida-D);
+    fill: var(--clr-medida-D2);
 }
 
 .biela-lado .grupoE{
-    fill: var(--medida-E);
+    fill: var(--clr-medida-E2);
 }
 
 .biela-lado .grupoF{
-    fill: var(--medida-F);
+    fill: var(--clr-medida-F2);
 }
 
 .biela-lado .grupoG{
-    fill: var(--medida-G);
+    fill: var(--clr-medida-G2);
 }
 
 /* muñon */
@@ -123,6 +123,14 @@
 .biela-muñon .ingresoI{
     top: 100%;
     right: 2%;
+}
+
+.biela-muñon .grupoH{
+    fill: var(--clr-medida-H2);
+}
+
+.biela-muñon .grupoI{
+    fill: var(--clr-medida-I2);
 }
 
 /* posicion biela*/
