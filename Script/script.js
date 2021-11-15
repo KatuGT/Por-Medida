@@ -21,3 +21,15 @@ for (i = 0; i < subMenuBtn.length; i++){
         }
     })
 }
+
+const inputs = document.querySelectorAll('.ingreso input')
+
+//console.log(inputs)
+
+for(let i = 0; i < inputs.length; i++){
+
+inputs[i].addEventListener('mouseover', function(){
+      this.style.borderBottom = '1px solid green'
+  })
+}
+
