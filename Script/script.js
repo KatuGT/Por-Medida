@@ -47,20 +47,27 @@ for (i = 0; i < subMenuBtn.length; i++){
 
 const paraResaltarMedida = document.querySelectorAll('g.para-resaltar');
 const paraResaltarTabla = document.querySelectorAll('th.para-resaltar')
-const paraResaltarInput = document.querySelectorAll('.ingreso input')
+const paraResaltarInput = document.querySelectorAll('.ingreso')
 
-
-console.log(paraResaltarTabla)
-console.log(paraResaltarInput)
 
 for(let i = 0; i < paraResaltarTabla.length; i++){
     paraResaltarTabla[i].addEventListener('mouseover', function(){
         this.classList.add('resaltar')
-
         paraResaltarMedida[i].classList.add('resaltar')
-
         paraResaltarInput[i].classList.add('resaltar')
-    })      
+    })    
+    
+    paraResaltarMedida[i].addEventListener('mouseover', function(){
+        this.classList.add('resaltar')
+        paraResaltarTabla[i].classList.add('resaltar')
+        paraResaltarInput[i].classList.add('resaltar')
+    }) 
+
+    paraResaltarInput[i].addEventListener('mouseover', function(){
+        this.classList.add('resaltar')
+        paraResaltarTabla[i].classList.add('resaltar')
+        paraResaltarMedida[i].classList.add('resaltar')
+    }) 
 }
 
 
@@ -68,11 +75,21 @@ for(let i = 0; i < paraResaltarTabla.length; i++){
 for(let i = 0; i < paraResaltarTabla.length; i++){
     paraResaltarTabla[i].addEventListener('mouseleave', function(){
         this.classList.remove('resaltar')
-
         paraResaltarMedida[i].classList.remove('resaltar')
-
         paraResaltarInput[i].classList.remove('resaltar')
-    })      
+    })   
+    
+    paraResaltarMedida[i].addEventListener('mouseleave', function(){
+        this.classList.remove('resaltar')
+        paraResaltarTabla[i].classList.remove('resaltar')
+        paraResaltarInput[i].classList.remove('resaltar')
+    }) 
+
+    paraResaltarInput[i].addEventListener('mouseleave', function(){
+        this.classList.remove('resaltar')
+        paraResaltarTabla[i].classList.remove('resaltar')
+        paraResaltarMedida[i].classList.remove('resaltar')
+    }) 
 }
 
 
