@@ -98,10 +98,8 @@ input[type=number]::-webkit-outer-spin-button
     border-bottom: 1px solid var(--clr-medida-K2);
 }
 
-.ingreso input:hover{
-    filter:brightness(1.4);
-}
 
+/* ESTILO QUE SE AGREGA CON JS */
 .resaltar{
     filter:brightness(1.4);
 }
