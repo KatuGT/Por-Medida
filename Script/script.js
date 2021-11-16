@@ -22,3 +22,47 @@ for (i = 0; i < subMenuBtn.length; i++){
     })
 }
 
+
+
+// const paraResaltar = [document.querySelectorAll('g .grupo'), document.querySelectorAll('thead th')]
+
+// paraResaltar.forEach(item => {
+//     item.addEventListener('click', event =>{
+//         event.style.border = '3px solid red'
+//     })
+// })
+
+
+
+// const paraResaltarTabla = document.querySelector('th');
+// const paraResaltarMedida = document.querySelector('.grupo');
+
+// const paraResaltarArray = [paraResaltarTabla, paraResaltarMedida]
+
+// paraResaltarArray.forEach((element) => {
+//     element.addEventListener('click',(e) =>{
+//         console.log('click!')
+//     })
+// });
+
+const paraResaltarMedida = document.querySelectorAll('g');
+const paraResaltarTabla = document.querySelectorAll('.para-resaltar')
+
+for(let i = 0; i < paraResaltarTabla.length; i++){
+    paraResaltarTabla[i].addEventListener('mouseover', function(){
+        this.classList.add('resaltar')
+
+        paraResaltarMedida[i].classList.add('resaltar')
+    })      
+}
+
+
+for(let i = 0; i < paraResaltarTabla.length; i++){
+    paraResaltarTabla[i].addEventListener('mouseleave', function(){
+        this.classList.remove('resaltar')
+        paraResaltarMedida[i].classList.remove('resaltar')
+    })      
+}
+
+
+

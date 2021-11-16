@@ -49,89 +49,61 @@ input[type=number]::-webkit-outer-spin-button
     border-bottom: 1px solid var(--clr-medida-A2);
 }
 
-#inputA:hover{
-    border-bottom: 1px solid var(--clr-medida-A1);
-}
 
 
 #inputB{
     border-bottom: 1px solid var(--clr-medida-B2);
 }
 
-#inputB:hover{
-    border-bottom: 1px solid var(--clr-medida-B1);
-}
 
 #inputC{
     border-bottom: 1px solid var(--clr-medida-C2);
 }
 
-#inputC:hover{
-    border-bottom: 1px solid var(--clr-medida-C1);
-}
 
 #inputD{
     border-bottom: 1px solid var(--clr-medida-D2);
-}
-
-#inputD:hover{
-    border-bottom: 1px solid var(--clr-medida-D1);
 }
 
 #inputE{
     border-bottom: 1px solid var(--clr-medida-E2);
 }
 
-#inputE:hover{
-    border-bottom: 1px solid var(--clr-medida-E1);
-}
 
 #inputF{
     border-bottom: 1px solid var(--clr-medida-F2);
 }
 
-#inputF:hover{
-    border-bottom: 1px solid var(--clr-medida-F1);
-}
 
 #inputG{
     border-bottom: 1px solid var(--clr-medida-G2);
 }
 
-#inputG:hover{
-    border-bottom: 1px solid var(--clr-medida-G1);
-}
 
 #inputH{
     border-bottom: 1px solid var(--clr-medida-H2);
 }
 
-#inputH:hover{
-    border-bottom: 1px solid var(--clr-medida-H1);
-}
 
 #inputI{
     border-bottom: 1px solid var(--clr-medida-I2);
 }
 
-#inputI:hover{
-    border-bottom: 1px solid var(--clr-medida-I1);
-}
 
 #inputJ{
     border-bottom: 1px solid var(--clr-medida-J2);
-}
-
-#inputJ:hover{
-    border-bottom: 1px solid var(--clr-medida-J1);
 }
 
 #inputK{
     border-bottom: 1px solid var(--clr-medida-K2);
 }
 
-#inputK:hover{
-    border-bottom: 1px solid var(--clr-medida-K1);
+.ingreso input:hover{
+    filter:brightness(1.4);
+}
+
+.resaltar{
+    filter:brightness(1.4);
 }
 
 @media (max-width:900px) {

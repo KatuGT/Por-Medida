@@ -10,27 +10,16 @@
     --azul-oscuro: #04334e;
     --azul-estandar: #064d75;
     --azul-claro: #063d5e;
-    --clr-medida-A1: #FF0000;
     --clr-medida-A2: hsl(0, 100%, 30%);
-    --clr-medida-B1: #ff8700;
     --clr-medida-B2: hsl(32, 100%, 30%);
-    --clr-medida-C1: #ffd300;
     --clr-medida-C2:hsl(50, 100%, 30%);
-    --clr-medida-D1: #deff0a;
     --clr-medida-D2: hsl(68, 100%, 30%);
-    --clr-medida-E1: #a1ff0a;
     --clr-medida-E2:hsl(83, 100%, 30%);
-    --clr-medida-F1: #0AFF99;
     --clr-medida-F2:hsl(155, 100%, 30%);
-    --clr-medida-G1: #0AEFFF;
     --clr-medida-G2: hsl(184, 100%, 30%);
-    --clr-medida-H1: #147DF5;
-    --clr-medida-H2: hsl(212, 89%, 14%);
-    --clr-medida-I1: #753bf2;
-    --clr-medida-I2: hsl(259, 88%, 30%);
-    --clr-medida-J1: #f841a6;
-    --clr-medida-J2:hsl(327, 93%, 30%);
-    --clr-medida-K1: #ff0aeb;
+    --clr-medida-H2: hsl(36, 78%, 25%);
+    --clr-medida-I2: hsl(259, 51%, 24%);
+    --clr-medida-J2:hsl(327, 92%, 26%);
     --clr-medida-K2: hsl(305, 100%, 30%);
 }
 
