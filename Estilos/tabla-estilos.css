@@ -124,3 +124,31 @@
         background-color: #c5c3c3;
     }
 }
+
+/* INPUT TABLE */
+
+
+th{
+    position: relative;
+}
+
+th > label{
+    position: absolute; 
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+
+th input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0;
+    outline: none;
+}
+
+.para-resalta:focus-within.para-resaltar .label{
+    display: none;
+}
