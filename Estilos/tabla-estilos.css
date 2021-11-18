@@ -89,7 +89,7 @@
 
 .resaltar{
     filter:brightness(1.8);
-    transform: all ease 3s;
+    transition: all ease 300ms;
 }
 
 

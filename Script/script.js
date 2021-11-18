@@ -1,3 +1,5 @@
+
+// MENU RESPONSIVE
 const btnMenu = document.getElementById('btnMenu')
 const menu = document.getElementById('menu')
 const subMenuBtn = document.querySelectorAll('.submenu-btn')
@@ -24,27 +26,7 @@ for (i = 0; i < subMenuBtn.length; i++){
 
 
 
-// const paraResaltar = [document.querySelectorAll('g .grupo'), document.querySelectorAll('thead th')]
-
-// paraResaltar.forEach(item => {
-//     item.addEventListener('click', event =>{
-//         event.style.border = '3px solid red'
-//     })
-// })
-
-
-
-// const paraResaltarTabla = document.querySelector('th');
-// const paraResaltarMedida = document.querySelector('.grupo');
-
-// const paraResaltarArray = [paraResaltarTabla, paraResaltarMedida]
-
-// paraResaltarArray.forEach((element) => {
-//     element.addEventListener('click',(e) =>{
-//         console.log('click!')
-//     })
-// });
-
+// RESALTANDO MEDIDAS
 const paraResaltarMedida = document.querySelectorAll('g.para-resaltar');
 const paraResaltarTabla = document.querySelectorAll('th.para-resaltar')
 const paraResaltarInput = document.querySelectorAll('.ingreso')
@@ -94,3 +76,22 @@ for(let i = 0; i < paraResaltarTabla.length; i++){
 
 
 
+// DUPLICA VALOR DE LOS INPUTS EN TABLA Y IMAGEN
+
+
+let valueTabla = document.querySelectorAll("th input"),
+    valueImagen = document.querySelectorAll(".ingreso input")
+
+window.onload = function() {     
+
+    for (let i = 0; i < valueTabla.length; i++) {        
+
+        valueTabla[i].addEventListener('input', function() {
+            valueImagen[i].value = valueTabla[i].value;
+        });
+        
+        valueImagen[i].addEventListener('input', function() {
+            valueTabla[i].value = valueImagen[i].value;
+        });        
+    }
+};
