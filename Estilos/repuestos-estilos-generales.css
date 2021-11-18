@@ -125,11 +125,12 @@ input[type=number]::-webkit-outer-spin-button
         transition: all 300ms ease;
         transform: scaleX(0);
         transform-origin: right;
+        text-align: center;
     }
     
-    .ingreso:focus-within{
+    /* .ingreso:focus-within{
         width: 5em;
-    }
+    } */
 
     .ingreso:focus-within.ingreso label{
         transform: translateX(0);
