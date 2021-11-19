@@ -29,10 +29,12 @@ for (i = 0; i < subMenuBtn.length; i++){
 // RESALTANDO MEDIDAS
 const paraResaltarMedida = document.querySelectorAll('g.para-resaltar');
 const paraResaltarTabla = document.querySelectorAll('th.para-resaltar')
-const paraResaltarInput = document.querySelectorAll('.ingreso')
+const paraResaltarInput = document.querySelectorAll('.imagen-producto .ingreso')
+console.log(paraResaltarTabla)
+console.log(paraResaltarMedida)
+console.log(paraResaltarInput)
 
-
-for(let i = 0; i < paraResaltarTabla.length; i++){
+for(let i = 0; i < paraResaltarTabla.length; i++){    
     paraResaltarTabla[i].addEventListener('mouseover', function(){
         this.classList.add('resaltar')
         paraResaltarMedida[i].classList.add('resaltar')
@@ -51,7 +53,6 @@ for(let i = 0; i < paraResaltarTabla.length; i++){
         paraResaltarMedida[i].classList.add('resaltar')
     }) 
 }
-
 
 
 for(let i = 0; i < paraResaltarTabla.length; i++){
@@ -83,7 +84,6 @@ let valueTabla = document.querySelectorAll("th input"),
     valueImagen = document.querySelectorAll(".ingreso input")
 
 window.onload = function() {     
-
     for (let i = 0; i < valueTabla.length; i++) {        
 
         valueTabla[i].addEventListener('input', function() {

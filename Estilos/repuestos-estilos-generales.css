@@ -8,10 +8,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+
 /* INPUT IMAGEN */
 
 .ingreso{
     width: 5em;
+    position: absolute;
 }
 
 .imagen-producto {
@@ -34,9 +36,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-right: 0.2em;
 }
 
-.biela-frente input,
-.biela-lado input,
-.biela-muñon input {
+.imagen-producto input {
   width: 3.5em;
   background-color: transparent;
   border: none;

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="Estilos/index-estilos.css" />
-  <link rel="stylesheet" href="Estilos/biela-estilos.css" />
+  <link rel="stylesheet" href="Estilos/pinion-estilos.css" />
   <link rel="stylesheet" href="Estilos/tabla-estilos.css" />
   <link rel="stylesheet" href="Estilos/repuestos-estilos-generales.css" />
   <title>Por Medida</title>
@@ -54,7 +54,7 @@
     </nav>
   </header>
   <main class="main-producto">
-    <div class="imagen-producto imagen-corona">
+    <div class="imagen-producto imagen-pinion">
       <div class="pinion-frente">
         <?xml version="1.0" encoding="utf-8"?>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -184,63 +184,90 @@
 		120.26,255.72 181.47,255.59 181.44,258.52 	" />
           </g>
         </svg>
+        <div class="ingreso ingresoA">
+          <label for="inputA">A</label>
+          <input type="number" id="inputA" name="inputA" />
+        </div>
+        <div class="ingreso ingresoB">
+          <label for="inputB">B</label>
+          <input type="number" id="inputB" name="inputB" />
+        </div>
+        <div class="ingreso ingresoC">
+          <label for="inputC">C</label>
+          <input type="number" id="inputC" name="inputC" />
+        </div>
 
       </div>
-      <div class="pinion-lado">
+      <div class="pinion-lado">        
+        <div class="ingreso ingresoD">
+          <label for="inputD">D</label>
+          <input type="number" id="inputD" name="inputD" />
+        </div>
       </div>
     </div>
     <div class="tabla-resultados">
-      <div class="tabla-resultados">
-        <table class="table">
-          <thead>
-            <th class="marca">Marca</th>
-            <th class="codigo">Codigo</th>
-            <th class="para-resaltar A">A</th>
-            <th class="para-resaltar B">B</th>
-            <th class="para-resaltar C">C</th>
-            <th class="para-resaltar D">D</th>
-            <th class="web">WEB</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-label="Marca">Prox</td>
-              <td data-label="Codigo">03.1111</td>
-              <td data-label="Medida A">5</td>
-              <td data-label="Medida B">10</td>
-              <td data-label="Medida C">15</td>
-              <td data-label="Medida D">20</td>
-              <td data-label="WEB">WWW</td>
-            </tr>
-            <tr>
-              <td data-label="Marca">HotRods</td>
-              <td data-label="Codigo">8-4532</td>
-              <td data-label="Medida A">5</td>
-              <td data-label="Medida B">10</td>
-              <td data-label="Medida C">15</td>
-              <td data-label="Medida D">20</td>      
-              <td data-label="WEB">WWW</td>
-            </tr>
-            <tr>
-              <td data-label="Marca">T.K.R.J</td>
-              <td data-label="Codigo">JP00254</td>
-              <td data-label="Medida A">5</td>
-              <td data-label="Medida B">10</td>
-              <td data-label="Medida C">15</td>
-              <td data-label="Medida D">20</td>           
-              <td data-label="WEB">WWW</td>
-            </tr>
-            <tr>
-              <td data-label="Marca">VESRAH</td>
-              <td data-label="Codigo">VA-6454</td>
-              <td data-label="Medida A">5</td>
-              <td data-label="Medida B">10</td>
-              <td data-label="Medida C">15</td>
-              <td data-label="Medida D">20</td>         
-              <td data-label="WEB">WWW</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h5>*Todas las medidas son en milimetros (mm)</h5>
+      <table class="table">
+        <thead>
+          <th class="marca">Marca</th>
+          <th class="codigo">Codigo</th>
+          <th class="para-resaltar A">
+            <label class="label" for="input-tablaA">A</label>
+            <input type="number" class="input-tabla" id="input-tablaA" placeholder="Ej: 22.00" />
+          </th>
+          <th class="para-resaltar B">
+            <label for="input-tablaB">B</label>
+            <input type="number" class="input-tabla" id="input-tablaB" placeholder="Ej: 14.00" />
+          </th>
+          <th class="para-resaltar C">
+            <label for="input-tablaC">C</label>
+            <input type="number" class="input-tabla" id="input-tablaC" placeholder="Ej: 75.00" />
+          </th>
+          <th class="para-resaltar D">
+            <label for="input-tablaD">D</label>
+            <input type="number" class="input-tabla" id="input-tablaD" placeholder="Ej: 99.00"/>
+          </th>         
+          <th class="web">WEB</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Marca">Prox</td>
+            <td data-label="Codigo">03.1111</td>
+            <td data-label="Medida A">5</td>
+            <td data-label="Medida B">10</td>
+            <td data-label="Medida C">15</td>
+            <td data-label="Medida D">20</td>
+            <td data-label="WEB">WWW</td>
+          </tr>
+          <tr>
+            <td data-label="Marca">HotRods</td>
+            <td data-label="Codigo">8-4532</td>
+            <td data-label="Medida A">5</td>
+            <td data-label="Medida B">10</td>
+            <td data-label="Medida C">15</td>
+            <td data-label="Medida D">20</td>
+            <td data-label="WEB">WWW</td>
+          </tr>
+          <tr>
+            <td data-label="Marca">T.K.R.J</td>
+            <td data-label="Codigo">JP00254</td>
+            <td data-label="Medida A">5</td>
+            <td data-label="Medida B">10</td>
+            <td data-label="Medida C">15</td>
+            <td data-label="Medida D">20</td>
+            <td data-label="WEB">WWW</td>
+          </tr>
+          <tr>
+            <td data-label="Marca">VESRAH</td>
+            <td data-label="Codigo">VA-6454</td>
+            <td data-label="Medida A">5</td>
+            <td data-label="Medida B">10</td>
+            <td data-label="Medida C">15</td>
+            <td data-label="Medida D">20</td>
+             <td data-label="WEB">WWW</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </main>
   <footer>

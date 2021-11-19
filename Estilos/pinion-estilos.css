@@ -1,0 +1,27 @@
+
+.imagen-pinion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+
+.pinion-frente{
+    width: 40%;
+    position: relative;
+}
+
+.pinion-frente .ingresoA{
+    top: 36%;
+    left: -29%;
+}
+
+.pinion-frente .ingresoB{
+    top: 23%;
+    left: 98%;
+}
+
+.pinion-frente .ingresoC{
+    top: 100%;
+    left: 33%;
+}
