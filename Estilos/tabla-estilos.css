@@ -1,9 +1,15 @@
 /* TABLA */
+.tabla-resultados h5{
+    color: #a5a5a5;
+    margin-bottom: 0.5em;
+}
+
 .table{
     width: 100%;
     border-collapse: collapse;
-
 }
+
+
 
 .table td, .table th{
     padding: 12px 15px;
@@ -83,6 +89,7 @@
 
 .resaltar{
     filter:brightness(1.8);
+    transition: all ease 300ms;
 }
 
 
@@ -124,3 +131,48 @@
         background-color: #c5c3c3;
     }
 }
+
+/* INPUT TABLE */
+
+
+th{
+    position: relative;
+}
+
+th > label{
+    position: absolute; 
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: block;
+    cursor: pointer;
+    padding: 15% 40%;
+}
+
+
+th input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+   }
+
+   th.para-resaltar{
+       padding: 0.5em;
+   }
+
+th.para-resaltar:hover label{
+display: none;
+}
+
+th.para-resaltar:hover input{
+    opacity:100%;
+}
+
+
+
+
