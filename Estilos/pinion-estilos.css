@@ -1,27 +1,132 @@
 
-.imagen-pinion{
+.imagen-producto {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% auto;
     place-items: center;
 }
 
 
 .pinion-frente{
-    width: 40%;
+    height: 50em;
+    aspect-ratio: 1;
     position: relative;
 }
 
 .pinion-frente .ingresoA{
-    top: 36%;
-    left: -29%;
+    top: 39%;
+    left: -5%;
 }
 
 .pinion-frente .ingresoB{
-    top: 23%;
+    top: 27.5%;
     left: 98%;
 }
 
 .pinion-frente .ingresoC{
-    top: 100%;
-    left: 33%;
+    top: 90%;
+    left: 45%;
 }
+
+.pinion-lado .ingresoD{
+    left: 30%;
+}
+
+.pinion-lado{
+    position: relative;
+    height: 50em;    
+    aspect-ratio: 0.193;
+    top: -0.400em;
+}
+
+
+@media (max-width:1300px) {
+    .imagen-producto {
+        grid-template-columns: 85% auto;
+    }
+
+}
+
+
+@media (max-width:1000px) {
+    .imagen-producto {
+        grid-template-columns: 100%;
+    }
+
+    .pinion-frente .ingresoA{
+        top:55%;
+        left:1%;
+    }
+
+    .pinion-frente .ingresoB{
+        top: 33%;
+        left: 88%;
+    }
+
+}
+
+@media (max-width:815px){
+    .imagen-producto{
+        grid-template-rows: min-content min-content;
+    }
+
+    .pinion-frente{
+        width: 90%;
+        height: 100%;
+    }
+
+    .pinion-lado{
+        width: 20%;
+        height: 100%;
+    }
+
+    .pinion-frente .ingresoA{
+        top: 53%;
+    }
+
+    .pinion-frente .ingresoB{
+        top: 33%;
+        left: 85%;
+    }
+
+    .pinion-frente .ingresoC{
+        top: 90%;      
+    }
+    
+}
+
+
+@media (max-width:400px){
+    .pinion-frente .ingresoA,
+    .pinion-frente .ingresoB{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pinion-frente .ingresoA label,
+    .pinion-frente .ingresoB label{
+        transform: translateX(0em);
+        margin-left: 0;
+    }
+
+    .pinion-frente .ingresoA{
+        left: -6%;
+    }
+
+
+    .pinion-frente .ingresoB{
+        top: 33%;
+        left: 80%;
+    }
+
+    .pinion-frente .ingresoC{
+        top: 90%;  
+        left: 38%;    
+    }
+
+    .pinion-lado .ingresoD{
+        left: -4%
+    }
+}
+
