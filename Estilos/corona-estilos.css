@@ -1,0 +1,47 @@
+.imagen-corona{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.corona-responsive{
+    display: none;
+}
+
+.corona-horizontal{
+    position: relative;
+    width: 80%;  
+}
+
+.corona-horizontal .ingresoA{
+    top: 45%;
+    left: -8%;
+}
+
+.corona-horizontal .ingresoB{
+    top: 45%;
+    left: 35%;
+}
+
+.corona-horizontal .ingresoC{
+    top: 45%;
+    left: 70%;
+}
+
+.corona-horizontal .ingresoD{
+    top: 91%;
+    left: 25%;
+}
+
+@media (max-width: 800px) {
+    .corona-escritorio{
+        display: none;
+    }
+
+    .corona-responsive{
+        display: initial;
+        width: 100%;
+    }
+
+    .corona-horizontal
+}
