@@ -1,0 +1,38 @@
+.imagen-valvula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valvula{
+    width: 10em;
+    position: relative;
+}
+
+.valvula .ingresoA{
+    top: -8%;
+    left: 10%;
+}
+
+.valvula .ingresoB{
+    top: 45%;
+    left: 100%;
+}
+
+.valvula .ingresoC{
+    left: 18%;
+}
+
+@media (max-width: 900px){
+    .valvula .ingresoA{
+        left: 17%;
+    }
+
+    .valvula .ingresoB{        
+        left: 80%;
+    }
+
+    .valvula .ingresoC{
+        left: 17%;
+    }
+}
