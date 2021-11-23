@@ -7,14 +7,14 @@
 
 
 .pinion-frente{
-    height: 50em;
+    height: 40em;
     aspect-ratio: 1;
     position: relative;
 }
 
 .pinion-frente .ingresoA{
     top: 39%;
-    left: -5%;
+    left: -8%;
 }
 
 .pinion-frente .ingresoB{
@@ -33,7 +33,7 @@
 
 .pinion-lado{
     position: relative;
-    height: 50em;    
+    height: 40em;    
     aspect-ratio: 0.193;
     top: -0.400em;
 }
