@@ -1,0 +1,158 @@
+
+.imagen-piston{
+    display: grid;
+    grid-template-columns: 45% auto 30%;
+    place-items: center;
+    
+}
+
+.piston-frente{
+  width: 28em;
+  position: relative;
+  top: 9%;
+}
+
+.piston-lado{
+    width: 15em;
+    position: relative;
+}
+
+.piston-perno{
+    width: 17em;
+    position: relative;
+}
+
+.piston-frente .ingresoA{
+    top: 18%;
+    left: -15%;
+}
+
+.piston-frente .ingresoB{
+    top: 18%;
+    left: 100%;
+}
+
+.piston-frente .ingresoC{
+    left: 43%;
+}
+
+.piston-lado .ingresoD{
+    top: 45%;
+    left: 100%;
+}
+
+.piston-perno .ingresoE{
+    left: 17%;
+}
+
+.piston-perno .ingresoF{
+    top: 17%;
+    left: 95%;
+}
+
+@media (max-width: 1300px) {
+    .imagen-piston{        
+        grid-template-columns: 60% auto;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .piston-perno{
+        grid-column: 1 / 3;
+    }
+}
+
+@media (max-width: 900px){
+    .piston-frente .ingresoA,
+    .piston-frente .ingresoB,
+    .piston-lado .ingresoD{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .piston-frente .ingresoA label,
+    .piston-frente .ingresoB label,
+    .piston-lado .ingresoD label{
+        transform: translateX(0em);
+        margin-left: 0;
+    }
+
+    .piston-frente .ingresoA{
+        left: -10%;
+    }
+
+    .piston-frente .ingresoB{
+        left: 93%;
+    }
+
+    .piston-lado .ingresoD{
+        left: 89%;
+    }
+}
+
+@media (max-width: 850px){
+    .imagen-piston{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+    }
+
+    .piston-lado{
+        margin: 4em 0;
+        left: 5.8%;
+        width: 17em;
+    }
+
+    .piston-perno{
+        grid-column: 1 / 2;
+        left: 5%;
+    }    
+}
+
+@media (max-width: 375px){
+    .piston-frente{
+        width: 76%;
+        left: -5%;
+    }
+
+    .piston-lado{
+        width: 50%;
+        left: 2%;
+    }
+
+    .piston-perno{
+        width: 50%
+    }
+
+    .piston-frente .ingresoA{
+        top: 14%;
+        left: -18%;
+    }
+
+    .piston-frente .ingresoB{
+        top: 16%;
+        left: 90%;
+    }
+
+    .piston-frente .ingresoC{
+        left: 35%;
+    }
+
+    .piston-perno .ingresoE{
+        left: 6%;
+    }
+
+    .piston-perno .ingresoF{
+        top: 10%;
+        left: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .piston-perno .ingresoF label{
+        transform: translateX(0em);
+        margin-left: 0;
+    }
+}
