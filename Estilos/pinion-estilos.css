@@ -1,39 +1,39 @@
 
 .imagen-producto {
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 50% 50%;
     place-items: center;
 }
 
 
 .pinion-frente{
-    height: 40em;
+    height: 30em;
     aspect-ratio: 1;
     position: relative;
 }
 
 .pinion-frente .ingresoA{
-    top: 39%;
-    left: -8%;
+    top: 36%;
+    left: -12%;
 }
 
 .pinion-frente .ingresoB{
-    top: 27.5%;
-    left: 98%;
+    top: 26%;
+    left: 97%;
 }
 
 .pinion-frente .ingresoC{
     top: 90%;
-    left: 45%;
+    left: 42%;
 }
 
 .pinion-lado .ingresoD{
-    left: 30%;
+    left: 5%;
 }
 
 .pinion-lado{
     position: relative;
-    height: 40em;    
+    height: 30em;    
     aspect-ratio: 0.193;
     top: -0.400em;
 }
@@ -41,7 +41,7 @@
 
 @media (max-width:1300px) {
     .imagen-producto {
-        grid-template-columns: 85% auto;
+        grid-template-columns: 60% auto;
     }
 
 }
