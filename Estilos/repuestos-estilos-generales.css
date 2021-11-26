@@ -153,6 +153,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-left: auto;
     transform: translateX(2em);
     transition: transform 300ms ease;
+    margin-bottom: 0.2em;
   }
 
   .ingreso input {
