@@ -1,17 +1,19 @@
 .imagen-disco-freno{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
 }
 
 .disco-freno{
-    width: 65em;
     position: relative;
+}
+.disco-freno svg{
+    width: 50em;
 }
 
 .disco-freno .ingresoA{
-    top: 47%;
-    left: -5%;
+    top: 45%;
+    left: -7%;
 }
 
 .disco-freno .ingresoB{
@@ -20,98 +22,96 @@
 }
 
 .disco-freno .ingresoC{
-    top: 47%;
-    left: 60%;
+    top: 45%;
+    left: 58%;
 }
 
 .disco-freno .ingresoD{
-    top: 47%;
+    top: 45%;
     left: 96%;
 }
 
 .disco-freno .ingresoE{
-    top: 100%;
-    left: 12%;
+    left: 10%;
 }
 
 @media (max-width:900px) {
-    .disco-freno svg{
+    .disco-freno{
         transform: rotate(90deg);
-        margin: 12em 0;
+        margin: 10em 0 ;
+    }
+
+    .disco-freno .ingreso{
+        transform: rotate(-90deg);
     }
 
     .disco-freno .ingresoA{
-        top: -2%;
-        left: 44.5%;
+        top: 48%;
+        left: -5%;
     }
     
     .disco-freno .ingresoB{
-        top: 22%;
-        left: 44.5%;
+        top: 48%;
+        left: 20%;
     }
     
     .disco-freno .ingresoC{
-        top: 62%;
-        left: 44.5%;
+        top: 45%;
+        left: 58.5%;
     }
     
     .disco-freno .ingresoD{
-        top: 97%;
-        left: 44.5%;
+        top: 48%;
+        left: 93%;
     }
     
     .disco-freno .ingresoE{
-        top: 14%;
-        left: 15%;
+        bottom: -10%;
+        left: 11%;
+    }
+}
+
+@media (max-width:525px){
+    .imagen-producto{
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    .disco-freno svg{
+        width: 30em;
+    }
+
+    .disco-freno .ingresoA{
+        top: 45.5%;
+        left: -9%;
+    }
+    
+    .disco-freno .ingresoB{
+        top: 45.5%;
+        left: 18%;
+    }
+    
+    .disco-freno .ingresoC{
+        top: 42%;
+        left: 55%;
+    }
+    
+    .disco-freno .ingresoD{
+        top: 45.5%;
+        left: 92%;
+    }
+    
+    .disco-freno .ingresoE{
+        bottom: -15%;
+        left: 10%;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;   
+        align-items: center; 
     }
 
     .disco-freno .ingresoE label{
         transform: translateX(0em);
-
         margin-left: 0;
     }
-}
-
-
-@media (max-width: 378px){
-    .disco-freno{
-        margin: 2em 0;
-        display: block;
-    }
-
-    .disco-freno svg{
-        margin: 2em;
-        height: 70vw;
-    }
-
-    .disco-freno .ingresoA{
-        top: -32%;
-        left: 42%;
-    }
-    
-    .disco-freno .ingresoB{
-        top: 10%;
-        left: 42%;
-    }
-    
-    .disco-freno .ingresoC{
-        top: 66%;
-        left: 42%;
-    }
-    
-    .disco-freno .ingresoD{
-        top: 120%;
-        left: 42%;
-    }
-    
-    .disco-freno .ingresoE{
-        top: -6%;
-        left: 17%;
-    }
-
 }
